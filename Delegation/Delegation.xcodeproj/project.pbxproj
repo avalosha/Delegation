@@ -12,9 +12,11 @@
 		C027485A22E3F8BF0037CC22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C027485822E3F8BF0037CC22 /* Main.storyboard */; };
 		C027485C22E3F8F80037CC22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C027485B22E3F8F80037CC22 /* Assets.xcassets */; };
 		C027485F22E3F8F80037CC22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C027485D22E3F8F80037CC22 /* LaunchScreen.storyboard */; };
-		C027486722E3F95A0037CC22 /* CalenderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027486622E3F95A0037CC22 /* CalenderDelegate.swift */; };
 		C027486922E3FA030037CC22 /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027486822E3FA030037CC22 /* Calendar.swift */; };
 		C027486B22E3FD180037CC22 /* Reminders.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027486A22E3FD180037CC22 /* Reminders.swift */; };
+		C027486D22E404650037CC22 /* CalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027486C22E404650037CC22 /* CalendarProtocols.swift */; };
+		C027486F22E405740037CC22 /* RemindersCalendarDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027486E22E405740037CC22 /* RemindersCalendarDataSource.swift */; };
+		C027487122E407170037CC22 /* RemindersCalendarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027487022E407170037CC22 /* RemindersCalendarDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +27,11 @@
 		C027485B22E3F8F80037CC22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C027485E22E3F8F80037CC22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C027486022E3F8F80037CC22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C027486622E3F95A0037CC22 /* CalenderDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderDelegate.swift; sourceTree = "<group>"; };
 		C027486822E3FA030037CC22 /* Calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calendar.swift; sourceTree = "<group>"; };
 		C027486A22E3FD180037CC22 /* Reminders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reminders.swift; sourceTree = "<group>"; };
+		C027486C22E404650037CC22 /* CalendarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarProtocols.swift; sourceTree = "<group>"; };
+		C027486E22E405740037CC22 /* RemindersCalendarDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCalendarDataSource.swift; sourceTree = "<group>"; };
+		C027487022E407170037CC22 /* RemindersCalendarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindersCalendarDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,9 +70,11 @@
 				C027485B22E3F8F80037CC22 /* Assets.xcassets */,
 				C027485D22E3F8F80037CC22 /* LaunchScreen.storyboard */,
 				C027486022E3F8F80037CC22 /* Info.plist */,
-				C027486622E3F95A0037CC22 /* CalenderDelegate.swift */,
+				C027486C22E404650037CC22 /* CalendarProtocols.swift */,
 				C027486822E3FA030037CC22 /* Calendar.swift */,
 				C027486A22E3FD180037CC22 /* Reminders.swift */,
+				C027486E22E405740037CC22 /* RemindersCalendarDataSource.swift */,
+				C027487022E407170037CC22 /* RemindersCalendarDelegate.swift */,
 			);
 			path = Delegation;
 			sourceTree = "<group>";
@@ -146,8 +152,10 @@
 			files = (
 				C027486B22E3FD180037CC22 /* Reminders.swift in Sources */,
 				C027485722E3F8BF0037CC22 /* ViewController.swift in Sources */,
-				C027486722E3F95A0037CC22 /* CalenderDelegate.swift in Sources */,
+				C027487122E407170037CC22 /* RemindersCalendarDelegate.swift in Sources */,
+				C027486D22E404650037CC22 /* CalendarProtocols.swift in Sources */,
 				C027485522E3F8BF0037CC22 /* AppDelegate.swift in Sources */,
+				C027486F22E405740037CC22 /* RemindersCalendarDataSource.swift in Sources */,
 				C027486922E3FA030037CC22 /* Calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,5 +1,5 @@
 //
-//  Reminders.swift
+//  RemindersCalendarDelegate.swift
 //  Delegation
 //
 //  Created by Álvaro Ávalos Hernández on 7/20/19.
@@ -8,33 +8,20 @@
 
 import Foundation
 
-protocol ReminderPresenting {
-    func yearChanged(to year: Int)
-}
-
-class Reminders: ReminderPresenting {
-    var title = "Year: 2018"
-    var calendar = Calendar()
+class RemindersCalendarDelegate: CalendarDelegate {
     
-    init() {
-        calendar.delegate = RemindersCalendarDelegate()
-        calendar.dataSource = RemindersCalendarDataSource()
-    }
+    var parentController: ReminderPresenting?
     
     func calendarShouldChangeYear(_ calendar: Calendar) -> Bool {
         return true
     }
     
     func calendar(_ calendar: Calendar, willDisplay year: Int) {
-        title = "Year: \(year)"
+        parentController?.yearChanged(to: year)
     }
     
     func calendar(_ calendar: Calendar, didSelect date: Date) {
         print("You selected \(date)")
-    }
-    
-    func yearChanged(to year: Int) {
-        title = "Year: \(year)"
     }
     
 }
